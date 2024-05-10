@@ -60,7 +60,7 @@ div {
     align-items: center;
     position: absolute;
     font-family: 'Comfortaa', cursive;
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 25px;
     pointer-events: none;
 }
@@ -73,9 +73,9 @@ div {
 
 
 #noim {
-    width: 100%;
     height: auto;
     bottom: 2%;
+    font-weight: 700;
 }
 
 #ur {
@@ -123,7 +123,7 @@ div {
 .list {
     width: 20%;
     height: 95%;
-    background-color: #E9EDC9;
+    background-color: #FEFAE0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -303,10 +303,10 @@ input.postCheck {
     white-space: normal;
     word-break: break-all;
     word-wrap: break-word;
-    background-color: #83c5be;
+    background-color: #FFBB70;
     position: absolute;
     border-radius: 20%;
-    color: #006d77;
+    color: #915110;
     font-family: 'Comfortaa', cursive;
     font-weight: 700;
     font-size: 18px;
