@@ -178,13 +178,13 @@ function removeTask(e, index_1) {
     var fall_img = Math.floor(Math.random() * 3)
     console.log(fall_img)
     if (fall_img == '0') {
-        catAni.style.backgroundImage = "url('fallCat1.png')"
+        catAni.style.backgroundImage = "url('img/fallCat1.png')"
     }
     else if (fall_img == '1') {
-        catAni.style.backgroundImage = "url('fallCat3.png')"
+        catAni.style.backgroundImage = "url('img/fallCat3.png')"
     }
     else {
-        catAni.style.backgroundImage = "url('fallCat5.png')"
+        catAni.style.backgroundImage = "url('img/fallCat5.png')"
     }
 
     var fallId = setInterval(fallAni, 1)
@@ -228,13 +228,13 @@ function addFinishCat() {
     var cat_img = Math.floor(Math.random() * 3)
     //console.log(cat_img)
     if (cat_img == '0') {
-        new_cat.src = 'cat_head_1.png'
+        new_cat.src = 'img/cat_head_1.png'
     }
     else if (cat_img == '1') {
-        new_cat.src = 'cat_head_2.png'
+        new_cat.src = 'img/cat_head_2.png'
     }
     else {
-        new_cat.src = 'cat_head_3.png'
+        new_cat.src = 'img/cat_head_3.png'
     }
 
     document.querySelector('#CatBlock').append(new_cat)
