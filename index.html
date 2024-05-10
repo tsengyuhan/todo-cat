@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Comfortaa:wght@300;400;500;600;700&family=Fredoka+One&display=swap"
+        rel="stylesheet">
+
+    <script src="main.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="fallCatBlock">
+            <div class="frame"></div>
+        </div>
+        <div class="leftPart">
+            <div id="horLine"></div>
+            <div id="verLine"></div>
+            <div class="labelBlock" id="im">IMPORTANT</div>
+            <div class="labelBlock" id="noim">NOT IMPORTANT</div>
+            <div class="labelBlock" id="ur">URGENT</div>
+            <div class="labelBlock" id="nour">NOT URGENT</div>
+
+            <div class="matrix" id="moveArea">
+                <div class="row">
+                    <div class="block" id='UrIm'></div>
+                    <div class="block" id="NurIm"></div>
+                </div>
+                <div class="row">
+                    <div class="block" id="UrNim"></div>
+                    <div class="block" id="NurNim"></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="list">
+            <div id="listTitle">
+                <p class="label">TODO LIST</p>
+                <p class="label" id="date">DATE</p>
+            </div>
+            <input placeholder="Type your task and Enter" class="todo_input" id="task_input" type="text"
+                onkeypress="addTask(event)" />
+            <!--<button onclick="addTodo()">ADD TASK</button>-->
+            <div class="listText">
+                <ul class="unfinish">
+
+                </ul>
+                <ul class="finish">
+
+                </ul>
+            </div>
+            <div id="CatBlock">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

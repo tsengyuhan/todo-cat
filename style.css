@@ -1,0 +1,317 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    padding: 0;
+    margin: 0;
+
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #D4A373;
+    box-sizing: border-box;
+    padding: 5px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.leftPart {
+    width: 75%;
+    height: 95%;
+    background-color: #FEFAE0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 20px;
+}
+
+#horLine {
+    width: 88%;
+    height: 6px;
+    background-color: #915110;
+    position: absolute;
+    top: calc(50%-3px);
+    pointer-events: none;
+    border-radius: 10px;
+}
+
+#verLine {
+    width: 6px;
+    height: 85%;
+    background-color: #915110;
+    position: absolute;
+    left: calc(50%-3px);
+    pointer-events: none;
+    border-radius: 10px;
+}
+
+.labelBlock {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    font-size: 25px;
+    pointer-events: none;
+}
+
+#im {
+    width: 100%;
+    height: auto;
+    top: 2%;
+}
+
+
+#noim {
+    width: 100%;
+    height: auto;
+    bottom: 2%;
+}
+
+#ur {
+    width: auto;
+    height: 100%;
+    writing-mode: vertical-lr;
+    left: 2%;
+}
+
+#nour {
+    width: auto;
+    height: 100%;
+    writing-mode: vertical-lr;
+    right: 2%;
+}
+
+.matrix {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.row {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.block {
+    width: 30vw;
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.list {
+    width: 20%;
+    height: 95%;
+    background-color: #E9EDC9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    z-index: 1200;
+    box-sizing: border-box;
+    padding: 20px 10px;
+}
+
+#listTitle {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    margin: 0;
+}
+
+.label {
+    font-family: 'Fredoka One', cursive;
+    font-size: 30px;
+    margin-top: 15px 0;
+}
+
+#date {
+    font-family: 'Comfortaa', cursive;
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+#task_input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+    font-size: 20px;
+}
+
+button {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    font-size: 10px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.listText {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.postBlock {
+    width: 150px;
+    height: 150px;
+    padding: 15px;
+    position: absolute;
+    /*background-color: #F9DEC9;*/
+    cursor: pointer;
+    z-index: 999;
+    display: flex;
+    white-space: normal;
+    word-break: break-all;
+    word-wrap: break-word;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 7px 14px -5px rgba(0, 0, 0, 0.57);
+    font-family: 'Architects Daughter', cursive;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+
+/*.postBlock--last {
+    z-index: 2;
+}
+
+.postBlock--dragging {
+    z-index: 999;
+    cursor: grabbing;
+}*/
+
+.postImg {
+    width: 100%;
+    height: auto;
+}
+
+input.postCheck {
+    width: 15%;
+    height: 15%;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.unFinishTask {
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.finishTask {
+    color: red;
+    display: none;
+}
+
+#CatBlock {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    overflow: scroll;
+}
+
+.catHeadImg {
+    width: 75px;
+    height: auto;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.fallCatBlock {
+    display: inline-block;
+    background-color: transparent;
+}
+
+.framImg {
+    width: 100%;
+    height: 100%;
+    /*background: transparent url('fallCat1.png');*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px 0;
+}
+
+
+
+.frameAni {
+    animation: catFalling 1s linear;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+@keyframes catFalling {
+    0% {
+        background: transparent url('walkAnimation-18.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0px 0;
+        animation-timing-function: steps(7);
+    }
+
+    100% {
+        background: transparent url('walkAnimation-18.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: -1050px 0;
+    }
+}
+
+
+
+.finished {
+    width: 75px;
+    box-sizing: border-box;
+    padding: 5px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    white-space: normal;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #83c5be;
+    position: absolute;
+    border-radius: 20%;
+    color: #006d77;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    font-size: 18px;
+
+
+    /*need this or the new element will cover the img and affect the hover function*/
+    pointer-events: none;
+}
