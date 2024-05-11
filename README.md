@@ -5,10 +5,8 @@
 
 This is a simple TODO list applied to [**the Urgent Important Matrix**](https://www.thecoachingtoolscompany.com/coaching-tools-101-what-is-the-urgent-important-matrix/).
 
+### [🐾 Live Demo🐾](https://tsengyuhan.github.io/todo-cat/)
 
-<h3>
-<a href="https://tsengyuhan.github.io/todo-cat/" target="_blank">🐾 Live Demo🐾 </a>
-</h3>
 
 </br>
 
