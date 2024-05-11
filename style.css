@@ -131,6 +131,7 @@ div {
     z-index: 1200;
     box-sizing: border-box;
     padding: 20px 10px;
+    position: relative;
 }
 
 #listTitle {
@@ -294,9 +295,11 @@ input.postCheck {
 
 
 .finished {
-    width: 75px;
+    /*width: 75px;*/
+    width: auto;
+    height: auto;
     box-sizing: border-box;
-    padding: 5px;
+    padding: 15px;
     display: none;
     align-items: center;
     justify-content: center;
@@ -305,11 +308,12 @@ input.postCheck {
     word-wrap: break-word;
     background-color: #FFBB70;
     position: absolute;
-    border-radius: 20%;
-    color: #915110;
+    z-index: 1300;
+    border-radius: 10px;
+    color: #ffffff;
     font-family: 'Comfortaa', cursive;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 16px;
 
 
     /*need this or the new element will cover the img and affect the hover function*/

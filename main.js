@@ -251,8 +251,12 @@ function addFinishCat() {
         showFinish.style.display = 'flex'
         showFinish.style.top = event.target.offsetTop + 'px'
         showFinish.style.left = event.target.offsetLeft + 'px'
-        showFinish.style.height = event.target.offsetHeight + 'px'
+      
+        //showFinish.style.height = event.target.offsetHeight + 'px'
+        //console.log(showFinish.clientWidth)
     })
+
+    
 
     new_cat.addEventListener('mouseout', function () {
         showFinish.style.display = 'none'
