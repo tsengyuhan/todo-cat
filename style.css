@@ -233,6 +233,7 @@ input.postCheck {
     display: none;
 }
 
+
 #CatBlock {
     width: 100%;
     height: auto;
@@ -241,7 +242,7 @@ input.postCheck {
     align-items: center;
     justify-content: space-around;
     position: relative;
-    overflow: scroll;
+    overflow-y:scroll ;
 }
 
 .catHeadImg {
